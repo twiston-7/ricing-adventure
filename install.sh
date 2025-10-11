@@ -18,7 +18,7 @@ cp ./dotfiles/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 
 # Wallpaper stuff
 cp ./images/wallpaper.png ~/wallpapers/wallpaper.png
-sed -i "s|/\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
+sed -i "s|\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
 
 # Enable sddm and restart, donezies!
 sudo systemctl enable sddm
