@@ -2,31 +2,36 @@
 <interface>
   <object class="GtkMenu" id="menu">
     <child>
-      <object class="GtkMenuItem" id="lock">
+      <object class="GtkImageMenuItem" id="lock">
         <property name="label">Lock</property>
+        <property name="icon-name">system-lock-screen</property>
       </object>
     </child>
     <child>
-      <object class="GtkMenuItem" id="suspend">
+      <object class="GtkImageMenuItem" id="suspend">
         <property name="label">Suspend</property>
+        <property name="icon-name">media-playback-pause</property>
       </object>
     </child>
     <child>
-      <object class="GtkMenuItem" id="hibernate">
+      <object class="GtkImageMenuItem" id="hibernate">
         <property name="label">Hibernate</property>
+        <property name="icon-name">weather-night</property>
       </object>
     </child>
     <child>
       <object class="GtkSeparatorMenuItem" id="separator1"/>
     </child>
     <child>
-      <object class="GtkMenuItem" id="shutdown">
+      <object class="GtkImageMenuItem" id="shutdown">
         <property name="label">Shutdown</property>
+        <property name="icon-name">system-shutdown</property>
       </object>
     </child>
     <child>
-      <object class="GtkMenuItem" id="reboot">
+      <object class="GtkImageMenuItem" id="reboot">
         <property name="label">Reboot</property>
+        <property name="icon-name">system-reboot</property>
       </object>
     </child>
   </object>
