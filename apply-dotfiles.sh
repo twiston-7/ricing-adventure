@@ -11,4 +11,4 @@ sed -i "s|\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
 
 # Waybar config
 mkdir -p ~/.config/waybar
-cp ./dotfiles/waybar/config.jsonc ~/.config/waybar/config.jsonc
+cp -r ./dotfiles/waybar/ ~/.config/waybar/
