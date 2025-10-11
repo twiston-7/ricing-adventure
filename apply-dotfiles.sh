@@ -10,5 +10,5 @@ cp ./images/wallpaper.png ~/wallpapers/wallpaper.png
 sed -i "s|\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
 
 # Waybar config
-mkdir -p ~/.config/waybar
-cp -r ./dotfiles/waybar/ ~/.config/waybar/
+rm -rf ~/.config/waybar
+cp -r ./dotfiles/waybar ~/.config/waybar
