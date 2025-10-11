@@ -12,13 +12,8 @@ sudo systemctl start bluetooth
 systemctl --user enable pipewire pipewire-pulse wireplumber
 systemctl --user start pipewire pipewire-pulse wireplumber
 
-# Main hyprland config
-mkdir -p ~/.config/hypr
-cp ./dotfiles/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
-
-# Wallpaper stuff
-cp ./images/wallpaper.png ~/wallpapers/wallpaper.png
-sed -i "s|\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
+# Apply dotfiles
+bash apply-dotfiles.sh
 
 # Enable sddm and restart, donezies!
 sudo systemctl enable sddm
