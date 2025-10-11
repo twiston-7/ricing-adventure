@@ -35,11 +35,11 @@
     "menu": "on-click",
     "menu-file": "~/.config/waybar/power_menu.xml",
     "menu-actions": {
-      "shutdown": "loginctl poweroff",
-      "reboot": "loginctl reboot",
+      "shutdown": "poweroff",
+      "reboot": "reboot",
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate",
-      "lock": "swaylock"
+      "lock": "hyprlock"
     }
   }
 }
