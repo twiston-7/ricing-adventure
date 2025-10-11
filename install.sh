@@ -2,7 +2,7 @@
 
 # Install stuff
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm git base-devel wayland hyprland wofi dolphin kitty hyprpaper hyprshot copyq waybar xorg-xwayland xdg-desktop-portal-hyprland dunst qt5-wayland qt6-wayland qt5ct qt6ct ttf-jetbrains-mono-nerd ttf-fira-code ttf-iosevka-nerd ttf-roboto ttf-ubuntu-font-family noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-liberation ttf-dejavu ttf-droid ttf-hack ttf-opensans ttf-ubuntu-mono wl-clipboard sddm feh pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber bluez bluez-utils blueman hyprlock hypridle fastfetch playerctl
+sudo pacman -S --noconfirm git base-devel wayland hyprland wofi dolphin kitty hyprpaper hyprshot copyq waybar xorg-xwayland xdg-desktop-portal-hyprland dunst qt5-wayland qt6-wayland qt5ct qt6ct ttf-jetbrains-mono-nerd ttf-fira-code ttf-iosevka-nerd ttf-roboto ttf-ubuntu-font-family noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-liberation ttf-dejavu ttf-droid ttf-hack ttf-opensans wl-clipboard sddm feh pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber bluez bluez-utils blueman hyprlock hypridle fastfetch playerctl
 
 # Enable le bluetooth
 sudo systemctl enable bluetooth
