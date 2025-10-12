@@ -17,7 +17,7 @@
     "format": "{:%a, %d. %b %H:%M}"
   },
 
-  "network#wifi": {
+  "network": {
     "interface": "auto",
     "format": "{icon}",
     "format-wifi": "{icon}",
