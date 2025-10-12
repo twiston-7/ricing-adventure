@@ -1,29 +1,52 @@
+/* Theme variables */
+@define-color fg #e6e9ef;
+@define-color bg rgba(15, 17, 22, 0.35);    /* translucent; Hyprland does the blur */
+@define-color border rgba(255, 255, 255, 0.08);
+@define-color hover rgba(255, 255, 255, 0.06);
+@define-color accent #89b4fa;
+@define-color warn #f59f00;
+@define-color crit #e03131;
+
 * {
-  font-family: "FiraCode Nerd Font", "Noto Sans", sans-serif;
-  font-size: 12pt;
+  font-family: "Inter", "SF Pro Text", "Noto Sans", "FiraCode Nerd Font", monospace;
+  font-size: 12.5pt;
   min-height: 0;
 }
 
 window#waybar {
-  background: rgba(20, 20, 24, 0.85);
-  color: #e5e5e5;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 12px;
-  margin: 6px;
-  padding: 4px 8px;
+  background: @bg;
+  color: @fg;
+  border: 1px solid @border;
+  border-radius: 14px;
+  padding: 6px 10px;
+  margin: 6px 8px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+}
+
+.modules-left, .modules-center, .modules-right {
+  margin: 0 6px;
 }
 
 #clock, #battery, #pulseaudio, #network, #custom-power {
-  padding: 0 10px;
+  padding: 0 12px;
   margin: 0 4px;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: background-color 120ms ease, color 120ms ease;
 }
 
-#custom-power { color: #ff6b6b; }
-#network.disconnected { color: #f59f00; }
-#battery.warning { color: #f59f00; }
-#battery.critical { color: #e03131; }
-#pulseaudio.muted { color: #888888; }
+#clock:hover, #battery:hover, #pulseaudio:hover, #network:hover, #custom-power:hover {
+  background-color: @hover;
+}
+
+#custom-power { color: #f38ba8; }
+#network.disconnected { color: @warn; }
+#battery.warning { color: @warn; }
+#battery.critical { color: @crit; }
+#pulseaudio.muted { color: rgba(230,233,239,0.55); }
 #clock { color: #cdd6f4; }
 
-window#waybar.hidden { opacity: 0.2; }
+/* Tighten icon alignment a bit */
+label, image { vertical-align: middle; }
+
+/* Optional: center clock pill a bit wider */
+#clock { padding: 0 16px; }
