@@ -30,7 +30,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "~/.config/waybar/wifi-menu.sh",
     "on-click-right": "nm-connection-editor"
-  }
+  },
 
   "volume": {
     "format": "{volume}% {icon}",
