@@ -18,7 +18,7 @@
   },
 
   "network#eth": {
-    "interface": "en*",
+    "interface": "en*|eth*",
     "format": "{icon}",
     "format-ethernet": "󰈀",
     "format-linked": "󰈀",
