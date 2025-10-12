@@ -18,9 +18,7 @@
   },
 
   "network": {
-    "interface": "auto",
-    "format-connected": "{iface}: {ipaddr}",
-    "format-disconnected": "No network"
+    "interface": "auto"
   },
 
   "volume": {
