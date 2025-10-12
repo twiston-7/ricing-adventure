@@ -17,19 +17,23 @@
     "format": "{:%a, %d. %b %H:%M}"
   },
 
-  "network": {
-    "interface": "auto",
+  "network#eth": {
+    "interface": "en*",
+    "format": "{icon}",
+    "format-ethernet": "󰈀",
+    "format-linked": "󰈀",
+    "format-disconnected": "",
+    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-linked": "{ifname}"
+  },
+
+  "network#wifi": {
+    "interface": "wl*",
     "format": "{icon}",
     "format-wifi": "{icon}",
-    "format-ethernet": "󰈀",
-    "format-disconnected": "󰤮",
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"], // low → high signal
-    "tooltip": true,
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "{ifname}",
-    "tooltip-format-disconnected": "Disconnected",
-    "on-click": "~/.config/waybar/wifi-menu.sh",
-    "on-click-right": "nm-connection-editor"
+    "format-disconnected": "",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "tooltip-format-wifi": "{essid}"
   },
 
   "volume": {
