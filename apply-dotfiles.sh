@@ -11,11 +11,8 @@ sed -i "s|\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
 
 # Waybar config
 rm -rf ~/.config/waybar
-mkdir -p ~/.config/waybar
-cp ./dotfiles/waybar/config.jsonc ~/.config/waybar/config.jsonc
+cp -r ./dotfiles/waybar ~/.config/waybar
 
 mkdir -p ~/.local/bin
-cp ./dotfiles/waybar/power-menu.sh ~/.local/bin/power-menu.sh
+mv ~/.config/waybar/power-menu.sh ~/.local/bin/power-menu.sh
 chmod +x ~/.local/bin/power-menu.sh
-
-cp ./dotfiles/waybar/style.css /etc/xdg/waybar/style.css
