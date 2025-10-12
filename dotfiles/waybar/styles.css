@@ -1,14 +1,12 @@
-/* Theme variables */
 @define-color fg #e6e9ef;
-@define-color bg rgba(15, 17, 22, 0.35);    /* translucent; Hyprland does the blur */
-@define-color border rgba(255, 255, 255, 0.08);
-@define-color hover rgba(255, 255, 255, 0.06);
-@define-color accent #89b4fa;
+@define-color bg rgba(15,17,22,0.35);
+@define-color border rgba(255,255,255,0.08);
+@define-color hover rgba(255,255,255,0.06);
 @define-color warn #f59f00;
 @define-color crit #e03131;
 
 * {
-  font-family: "Inter", "SF Pro Text", "Noto Sans", "FiraCode Nerd Font", monospace;
+  font-family: "Inter","SF Pro Text","Noto Sans","FiraCode Nerd Font",monospace;
   font-size: 12.5pt;
   min-height: 0;
 }
@@ -23,11 +21,11 @@ window#waybar {
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 
-.modules-left, .modules-center, .modules-right {
-  margin: 0 6px;
-}
+.modules-left, .modules-center, .modules-right { margin: 0 6px; }
 
 #clock, #battery, #pulseaudio, #network, #custom-power {
+  background: transparent;
+  color: @fg;
   padding: 0 12px;
   margin: 0 4px;
   border-radius: 10px;
@@ -35,7 +33,7 @@ window#waybar {
 }
 
 #clock:hover, #battery:hover, #pulseaudio:hover, #network:hover, #custom-power:hover {
-  background-color: @hover;
+  background: @hover;
 }
 
 #custom-power { color: #f38ba8; }
@@ -43,10 +41,6 @@ window#waybar {
 #battery.warning { color: @warn; }
 #battery.critical { color: @crit; }
 #pulseaudio.muted { color: rgba(230,233,239,0.55); }
-#clock { color: #cdd6f4; }
 
-/* Tighten icon alignment a bit */
-label, image { vertical-align: middle; }
-
-/* Optional: center clock pill a bit wider */
+/* Optional micro‑alignment without vertical-align */
 #clock { padding: 0 16px; }
