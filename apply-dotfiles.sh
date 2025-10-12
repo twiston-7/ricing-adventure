@@ -12,3 +12,4 @@ sed -i "s|\$HOME|$HOME|g" ~/.config/hypr/hyprpaper.conf
 # Waybar config
 rm -rf ~/.config/waybar
 cp -r ./dotfiles/waybar ~/.config/waybar
+chmod +x ~/.config/waybar/power-menu.sh
