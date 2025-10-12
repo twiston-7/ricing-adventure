@@ -15,33 +15,7 @@ systemctl --user start pipewire pipewire-pulse wireplumber
 
 # Apply dotfiles
 bash apply-dotfiles.sh
-
-# Disable waybar default style.css
-FILE="/etc/xdg/waybar/style.css"
-
-# Only proceed if the file exists (regular file or symlink)
-if [[ -e "$FILE" ]]; then  # -e tests for existence
-  ts="$(date +%Y%m%d-%H%M%S)"            # timestamp like 2025-10-12-185500
-  NEW="${FILE}.disabled.${ts}"
-
-  # Ensure target name is unique
-  while [[ -e "$NEW" ]]; do
-    ts="$(date +%Y%m%d-%H%M%S)-$RANDOM"
-    NEW="${FILE}.disabled.${ts}"
-  done
-
-  # Use sudo if needed
-  if [[ ! -w "$FILE" || ! -w "$(dirname "$FILE")" ]]; then
-    sudo mv -v -- "$FILE" "$NEW"
-  else
-    mv -v -- "$FILE" "$NEW"
-  fi
-
-  echo "Renamed: $FILE -> $NEW"
-else
-  echo "No file found at: $FILE"
-fi
-
+c
 # Enable sddm and restart, donezies!
 sudo systemctl enable sddm
 reboot
