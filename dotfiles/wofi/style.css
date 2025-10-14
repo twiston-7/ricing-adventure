@@ -48,6 +48,10 @@
   background-color: rgba(60,60,60,0.35);
 }
 
+#selected {
+  border: none !important;
+}
+
 #input:focus,
 #input:focus-visible {
   outline: none !important;
