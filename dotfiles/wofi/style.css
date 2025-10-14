@@ -50,7 +50,7 @@
   background-color: rgba(60,60,60,0.35);
 }
 
-#input:focus #entry:selected {
+#input:focus #input:focus-visible #entry:selected {
   color: inherit;
   border: none;
   background-color: transparent;
