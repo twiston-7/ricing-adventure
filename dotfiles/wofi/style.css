@@ -49,9 +49,19 @@
 }
 
 #input:focus,
-#input:focus-visible {
-  outline: none;
-  border: 2px solid #f4a261;
-  border-radius: 8px;
-  background-color: rgba(42,42,42,0.9);
+#input:focus-visible,
+#input:focus-within,
+entry:focus,
+entry:focus-within {
+  outline: none !important;
+  outline-color: transparent !important;
+  box-shadow: none !important;
+  border: 2px solid #f4a261 !important;
+}
+
+/* If the ring is applied to a parent on focus, clear it too */
+#inner-box:focus-within,
+#outer-box:focus-within {
+  outline: none !important;
+  box-shadow: none !important;
 }
