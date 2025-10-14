@@ -42,7 +42,7 @@
 }
 
 /* Default selected styling (when window is NOT focused-within) */
-#window:focus-within #entry:selected {
+#window:focus-within #inner-box #entry:selected {
   color: inherit;
   border: none;
   background-color: transparent;
