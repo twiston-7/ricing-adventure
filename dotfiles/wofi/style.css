@@ -50,6 +50,13 @@
   background-color: rgba(60,60,60,0.35);
 }
 
+#input:focus #entry:selected {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
 /* Remove UA focus ring on the input if any */
 #input {  
   box-shadow: none;
@@ -66,9 +73,4 @@
 
 /* When anything inside the window (e.g., #input) is focused,
    make the selected entry look like a normal entry */
-#input:focus-within #entry:selected {
-  color: inherit;
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
+
