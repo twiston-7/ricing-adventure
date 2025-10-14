@@ -22,7 +22,6 @@
   font-size: 11px;
   line-height: 1.1;
   box-sizing: border-box;
-  box-shadow: none;
 }
 
 #inner-box {
@@ -49,24 +48,24 @@
   background-color: rgba(60,60,60,0.35);
 }
 
+#input {  
+  box-shadow: none;
+}
+
 #input:focus,
 #input:focus-visible {
   outline: none;
   border: 2px solid #f4a261;
   border-radius: 8px;
   background-color: rgba(42,42,42,0.9);
-  box-shadow: none;
 }
 
-#inner-box:focus-within,
-#outer-box:focus-within {
-  box-shadow: none;
-  outline: none;
-}
-
+#input:focus ~ #outer-box #entry:selected,
+#input:focus-visible ~ #outer-box #entry:selected,
+#input:focus-within ~ #outer-box #entry:selected,
 #outer-box:focus-within #entry:selected,
-#inner-box:focus-within #entry:selected {
-  border: none;
-  background-color: transparent;
-  color: inherit;
+#scroll:focus-within #entry:selected {
+  border: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
 }
