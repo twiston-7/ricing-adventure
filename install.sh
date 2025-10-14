@@ -14,7 +14,7 @@ systemctl --user enable pipewire pipewire-pulse wireplumber
 systemctl --user start pipewire pipewire-pulse wireplumber
 
 # Install ohmyzsh
-sh -c "CHSH=yes RUNZSH=yes KEEP_ZSHRC=no OVERWRITE_CONFIRMATION=yes $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "CHSH=yes RUNZSH=yes KEEP_ZSHRC=no OVERWRITE_CONFIRMATION=no $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Apply dotfiles
 bash apply-dotfiles.sh
