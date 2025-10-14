@@ -40,10 +40,14 @@ window {
   background-color: #f4a261ff;
 }
 
+.entry {
+  color: #dadadaff;
+}
+
 #text {
   color: #dadadaff;
 }
 
 #entry:selected #text {
-  color: #dadadaff;
+  color: #f4a261ff;
 }
