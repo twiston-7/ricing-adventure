@@ -57,7 +57,7 @@
 #input:focus-visible {
   outline: none;
   border: 2px solid #f4a261;
-  box-shadow: none;
+  /* box-shadow: none; */
   border-radius: 8px;
   background-color: rgba(42,42,42,0.9);
 }
