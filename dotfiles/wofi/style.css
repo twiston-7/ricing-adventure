@@ -42,12 +42,11 @@
 }
 
 /* Default selected styling (when window is NOT focused-within) */
-#input:focus-within #entry:selected {
-  color: #d4107c;
+#window:focus-within #entry:selected {
+  color: inherit;
+  border: none;
+  background-color: transparent;
   outline: none;
-  border: 2px solid #d4107c;
-  border-radius: 6px;
-  background-color: rgba(60,60,60,0.35);
 }
 
 #entry:selected {
