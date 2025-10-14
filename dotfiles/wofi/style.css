@@ -4,6 +4,7 @@
   border: 2px solid #2a2a2ae6;
   border-radius: 8px;
   background-color: rgba(30,30,30,0.93);
+  color: #dadadaff;
 }
 
 /* #input {
@@ -11,7 +12,6 @@
   padding: 8px 10px;
   border: 1px solid #3a3a3acc;
   border-radius: 6px;
-  color: #dadadaff;
   background-color: rgba(42,42,42,0.85);
 }
 
