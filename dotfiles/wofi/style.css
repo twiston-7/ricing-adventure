@@ -50,6 +50,7 @@
 
 #input:focus,
 #input:focus-visible {
+  border: none;
   outline: none;
   box-shadow: 2px solid #f4a261;
   border-radius: 8px;
