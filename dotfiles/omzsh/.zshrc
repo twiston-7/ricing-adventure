@@ -1,6 +1,7 @@
 # Load Oh My Zsh and theme
 export ZSH="$HOME/.oh-my-zsh"                             # Change if OMZ is elsewhere
-ZSH_THEME="powerlevel10k/powerlevel10k"                   # Install p10k and set Nerd Font in terminal [web:40][web:53]
+# ZSH_THEME="powerlevel10k/powerlevel10k"                   # Install p10k and set Nerd Font in terminal [web:40][web:53]
+ZSH_THEME="robbyrussell"                                   # Simple default theme [web:27]
 
 # History: large, fast, deduped, shared across sessions
 HISTFILE="$HOME/.zhistory"
