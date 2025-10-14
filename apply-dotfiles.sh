@@ -18,5 +18,5 @@ mv ~/.config/waybar/power-menu.sh ~/.local/bin/power-menu.sh
 chmod +x ~/.local/bin/power-menu.sh
 
 # Rofi config
-rm -rf ~/.config/rofi
-cp -r ./dotfiles/rofi ~/.config/rofi
+rm -rf ~/.config/wofi
+cp -r ./dotfiles/wofi ~/.config/wofi
