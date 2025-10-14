@@ -1,4 +1,4 @@
-#window {
+/* #window {
   margin: 8px;
   padding: 8px;
   border: 2px solid #2a2a2ae6;
@@ -34,12 +34,12 @@
     color: #dadadaff;
 }
 
-/* #entry {
+#entry {
   padding: 6px 10px;
   border-radius: 6px;
   background-color: transparent;
-} */
+}
 
 #entry:selected {
   color: #f4a261ff;
-}
+} */
