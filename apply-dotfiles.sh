@@ -21,3 +21,15 @@ chmod +x ~/.local/bin/power-menu.sh
 rm -rf ~/.config/wofi
 cp -r ./dotfiles/wofi ~/.config/wofi
 sed -i "s|\$HOME|$HOME|g" ~/.config/wofi/config
+
+# Kitty config
+rm -rf ~/.config/kitty
+cp -r ./dotfiles/kitty ~/.config/kitty
+
+# Fastfetch config
+rm -rf ~/.config/fastfetch
+mkdir -p ~/.config/fastfetch
+
+# Omzsh config
+rm -rf ~/.zshrc
+cp ./dotfiles/omzsh/.zshrc ~/.zshrc

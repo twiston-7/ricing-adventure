@@ -14,7 +14,7 @@ menu() {
 }
 
 # Ensure NetworkManager is present
-command -v nmcli >/dev/null 2>&1 || { notify-send "Wi‑Fi" "nmcli not found"; exit 1; }
+command -v nmcli >/dev/null 2>&1 || { notify-send "Wi-Fi" "nmcli not found"; exit 1; }
 
 # Build menu:
 # - Current connection at top
@@ -22,7 +22,7 @@ command -v nmcli >/dev/null 2>&1 || { notify-send "Wi‑Fi" "nmcli not found"; e
 CURRENT="$(nmcli -t -f ACTIVE,SSID dev wifi | awk -F: '$1=="yes"{print $2}' | head -n1)"
 STATE="$(nmcli -g WIFI r)"
 HDR=" Connected: ${CURRENT:-none}"
-ACTIONS=$'Toggle Wi‑Fi\nRescan\nEdit connections'
+ACTIONS=$'Toggle Wi-Fi\nRescan\nEdit connections'
 
 # List visible SSIDs with lock and signal bars
 LIST="$(nmcli -t -f IN-USE,SECURITY,SIGNAL,SSID dev wifi | awk -F: '
@@ -41,7 +41,7 @@ LIST="$(nmcli -t -f IN-USE,SECURITY,SIGNAL,SSID dev wifi | awk -F: '
 CHOICE="$(printf "%s\n\n%s\n%s\n" "$HDR" "$ACTIONS" "$LIST" | menu | sed 's/^ *//')"
 
 case "$CHOICE" in
-  Toggle\ Wi‑Fi)
+  Toggle\ Wi-Fi)
     if [ "$STATE" = "enabled" ]; then nmcli r wifi off; else nmcli r wifi on; fi
     ;;
   Rescan)
@@ -51,7 +51,7 @@ case "$CHOICE" in
     if command -v nm-connection-editor >/dev/null 2>&1; then
       nm-connection-editor &
     else
-      notify-send "Wi‑Fi" "nm-connection-editor not installed"
+      notify-send "Wi-Fi" "nm-connection-editor not installed"
     fi
     ;;
   ""|Connected:*|Networks)
