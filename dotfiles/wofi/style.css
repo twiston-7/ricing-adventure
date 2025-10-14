@@ -60,11 +60,10 @@
   background-color: rgba(42,42,42,0.9);
 }
 
-#input:focus ~ #outer-box #entry:selected,
-#input:focus-visible ~ #outer-box #entry:selected,
-#input:focus-within ~ #outer-box #entry:selected,
-#outer-box:focus-within #entry:selected,
-#scroll:focus-within #entry:selected {
+#window:focus-within #input:focus ~ #scroll #entry:selected,
+#window:focus-within #input:focus-visible ~ #scroll #entry:selected,
+#window:focus-within #input:focus-within ~ #scroll #entry:selected,
+#window:focus-within #entry:selected:focus {
   border: none !important;
   background-color: transparent !important;
   color: inherit !important;
