@@ -42,7 +42,7 @@
 }
 
 /* Default selected styling (when window is NOT focused-within) */
-#window:focus-within #entry:selected {
+#window:focus #entry:selected {
   color: #d4107c;
   outline: none;
   border: 2px solid #d4107c;
