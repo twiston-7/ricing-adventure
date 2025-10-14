@@ -44,3 +44,35 @@ window#waybar {
 
 /* Optional micro‑alignment without vertical-align */
 #clock { padding: 0 16px; }
+
+#workspaces {
+  background: transparent;
+  padding: 0 6px;
+  margin: 0 2px;
+}
+
+#workspaces button {
+  color: @fg;
+  background: transparent;
+  padding: 0 8px;
+  margin: 0 2px;
+  border-radius: 10px;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+#workspaces button:hover {
+  background: @hover;
+}
+
+#workspaces button.focused {
+  color: #f59f00;
+  background: rgba(255,255,255,0.08);
+}
+
+#workspaces button.urgent {
+  color: @crit;
+}
+
+#workspaces button.visible {
+  color: rgba(230,233,239,0.8);
+}

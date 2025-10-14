@@ -7,9 +7,33 @@
   "fixed-center": true,
   "reload_style_on_change": true,
 
-  "modules-left": ["custom/power"],
+  "modules-left": ["custom/power", "hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "network", "pulseaudio", "battery"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "●",
+      "focused": "",
+      "urgent": "",
+      "visible": "◉"
+    },
+    "on-click": "hyprctl dispatch workspace {id}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "sort-by-number": true,
+    "all-outputs": false,
+    "active-only": false,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "tooltip": false
+  },
 
   "custom/power": {
     "format": "⏻",
