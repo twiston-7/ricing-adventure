@@ -1,6 +1,6 @@
-prompt=Run:
+prompt=
 allow_images=false
 show=drun
 style=$HOME/.config/wofi/style.css
 location=top
-yoffset=80
+yoffset=5%
