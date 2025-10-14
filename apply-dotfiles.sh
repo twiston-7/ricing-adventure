@@ -20,3 +20,4 @@ chmod +x ~/.local/bin/power-menu.sh
 # Rofi config
 rm -rf ~/.config/wofi
 cp -r ./dotfiles/wofi ~/.config/wofi
+sed -i "s|\$HOME|$HOME|g" ~/.config/wofi/config

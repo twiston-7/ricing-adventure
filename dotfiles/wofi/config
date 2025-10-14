@@ -1,4 +1,4 @@
 prompt=Run:
 allow_images=false
 show=drun
-style=~/.config/wofi/style.css
+style=$HOME/.config/wofi/style.css
