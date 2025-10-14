@@ -9,7 +9,7 @@
 
   "modules-left": ["custom/power"],
   "modules-center": ["clock"],
-  "modules-right": ["network", "pulseaudio", "battery"],
+  "modules-right": ["tray", "network", "pulseaudio", "battery"],
 
   "custom/power": {
     "format": "⏻",
