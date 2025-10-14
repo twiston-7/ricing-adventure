@@ -7,19 +7,19 @@
 
 * {
   font-family: "Inter","SF Pro Text","Noto Sans","FiraCode Nerd Font",monospace;
-  font-size: 1.9vh;
+  font-size: 12px;
   min-height: 0;
 }
 
 window#waybar {
   box-sizing: border-box;
-  height: 3vh;
+  height: 3%;
   background: @bg;
   color: @fg;
-  border: 0.12vh solid @border;
+  border: 1px solid @border;
   border-radius: 14px;
-  padding: 0.4vh 0.7vh;
-  margin: 0.5vh 0.7vh;
+  padding: 4px 7px;
+  margin: 6px 8px;
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 
