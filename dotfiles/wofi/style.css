@@ -42,5 +42,8 @@
 
 #entry:selected {
   color: #f4a261;
-  padding: 3px;
-} 
+  outline: none;
+  border: 2px solid #f4a261;
+  border-radius: 6px;
+  background-color: rgba(60,60,60,0.35);
+}
