@@ -1,4 +1,4 @@
-/* #window {
+#window {
   margin: 8px;
   padding: 8px;
   border: 2px solid #2a2a2ae6;
@@ -6,7 +6,7 @@
   background-color: rgba(30,30,30,0.93);
 }
 
-#input {
+/* #input {
   margin: 6px 6px 10px 6px;
   padding: 8px 10px;
   border: 1px solid #3a3a3acc;
