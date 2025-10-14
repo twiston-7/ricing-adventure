@@ -1,3 +1,4 @@
+/* Your existing styles (unchanged) */
 #window {
   margin: 8px;
   padding: 8px;
@@ -40,6 +41,7 @@
   background-color: transparent;
 }
 
+/* Default selected styling (when window is NOT focused-within) */
 #entry:selected {
   color: #f4a261;
   outline: none;
@@ -48,10 +50,12 @@
   background-color: rgba(60,60,60,0.35);
 }
 
+/* Remove UA focus ring on the input if any */
 #input {  
   box-shadow: none;
 }
 
+/* Input focus styles */
 #input:focus,
 #input:focus-visible {
   outline: none;
@@ -60,20 +64,11 @@
   background-color: rgba(42,42,42,0.9);
 }
 
-/* neutral default for selected row */
-#entry:selected {
-  color: #dadada;
-  outline: none;
+/* When anything inside the window (e.g., #input) is focused,
+   make the selected entry look like a normal entry */
+window:focus-within #entry:selected {
+  color: inherit;
   border: none;
-  border-radius: 6px;
-  background-color: rgba(60,60,60,0.35);
-}
-
-/* only paint the orange border when the list has focus */
-#scroll:focus-within #entry:selected,
-#outer-box:focus-within #entry:selected,
-#inner-box:focus-within #entry:selected {
-  color: #f4a261;
-  border: 2px solid #f4a261;
-  background-color: rgba(60,60,60,0.35);
+  background-color: transparent;
+  outline: none;
 }
