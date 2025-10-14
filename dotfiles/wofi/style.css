@@ -59,9 +59,9 @@ entry:focus-within {
   border: 2px solid #f4a261 !important;
 }
 
-/* If the ring is applied to a parent on focus, clear it too */
+/* If the ring is applied to a parent on focus, clear it too
 #inner-box:focus-within,
 #outer-box:focus-within {
   outline: none !important;
   box-shadow: none !important;
-}
+} */
