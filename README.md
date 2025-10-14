@@ -1,3 +1,5 @@
+Best of luck soldier.
+
 ```
 sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm git
