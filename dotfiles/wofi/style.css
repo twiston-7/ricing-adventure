@@ -1,30 +1,57 @@
-/* match selected entry border */
-:root {
-  --accent: #f4a261;
-  --focus-width: 2px;
+#window {
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid #2a2a2a;
+  border-radius: 12px;
+  background-color: rgba(30,30,30,0.93);
+}
+
+#scroll {
+  color: #dadada;
+  margin: 0;
+  padding: 0;
+}
+
+#input {
+  margin: 2px 4px;
+  padding: 2px 6px;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background-color: rgba(42,42,42,0.85);
+  color: #dadada;
+  font-size: 11px;
+  line-height: 1.1;
+  box-sizing: border-box;
+}
+
+#inner-box {
+  padding: 4px;
+  background-color: transparent;
+}
+
+#outer-box {
+  padding: 6px;
+  background-color: transparent;
+}
+
+#entry {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: transparent;
 }
 
 #entry:selected {
-  color: var(--accent);
+  color: #f4a261;
   outline: none;
-  border: var(--focus-width) solid var(--accent);
+  border: 2px solid #f4a261;
   border-radius: 6px;
   background-color: rgba(60,60,60,0.35);
 }
 
-/* remove native blue ring and use same border on focus */
 #input:focus,
-#input:focus-visible,
-#input:focus-within {
+#input:focus-visible {
   outline: none;
-  box-shadow: none;
-  border: var(--focus-width) solid var(--accent);
-}
-
-/* belt-and-braces: clear outline on all focusable children inside the input row */
-#input *,
-#input *:focus,
-#input *:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
+  border: 2px solid #f4a261;
+  border-radius: 8px;
+  background-color: rgba(42,42,42,0.9);
 }
