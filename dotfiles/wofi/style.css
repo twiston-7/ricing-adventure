@@ -59,4 +59,5 @@
 #inner-box:focus-within {
   box-shadow: none !important;
   outline: none !important;
+    border: 2px solid #f4a261 !important;
 }
