@@ -21,7 +21,7 @@ window#waybar {
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 
-.modules-left, .modules-center, .modules-right { margin: 0 6px; }
+.modules-left, .modules-center, .modules-right { margin: 0 3px; }
 
 #clock, #battery, #pulseaudio, #network, #custom-power {
   background: transparent;
