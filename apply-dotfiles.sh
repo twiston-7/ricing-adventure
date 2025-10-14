@@ -16,3 +16,7 @@ cp -r ./dotfiles/waybar ~/.config/waybar
 mkdir -p ~/.local/bin
 mv ~/.config/waybar/power-menu.sh ~/.local/bin/power-menu.sh
 chmod +x ~/.local/bin/power-menu.sh
+
+# Rofi config
+rm -rf ~/.config/rofi
+cp -r ./dotfiles/rofi ~/.config/rofi
