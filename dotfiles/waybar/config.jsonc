@@ -23,8 +23,8 @@
   },
 
   "network": {
-    "format-wifi": "{icon} {essid} {signalStrength}%",
-    "format-ethernet": "{icon} {ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "{icon}",
     "format-disconnected": "󰤭",
     "format-icons": {
       "wifi": ["󰤟","󰤢","󰤥","󰤨"],
