@@ -3,4 +3,4 @@ allow_images=false
 show=drun
 style=$HOME/.config/wofi/style.css
 location=top
-yoffset=5%
+yoffset=7.5%
