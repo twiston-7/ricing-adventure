@@ -1,4 +1,4 @@
-style=~/.config/wofi/style.css
-prompt=Run asdjflaksdjf:
+prompt=Run:
 allow_images=false
 show=drun
+style=~/.config/wofi/style.css
