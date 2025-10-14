@@ -13,11 +13,12 @@
 }
 
 #input {
-  margin: 6px 6px 10px 6px;
+  display: none;
+  /* margin: 6px 6px 10px 6px;
   padding: 8px 10px;
   border: 1px solid #3a3a3a;
   border-radius: 6px;
-  background-color: rgba(42,42,42,0.85);
+  background-color: rgba(42,42,42,0.85); */
 }
 
 #inner-box {
