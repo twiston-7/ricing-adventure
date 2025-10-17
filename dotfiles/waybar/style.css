@@ -42,7 +42,6 @@ window#waybar {
 #battery.critical { color: @crit; }
 #pulseaudio.muted { color: rgba(230,233,239,0.55); }
 
-/* Optional micro‑alignment without vertical-align */
 #clock { padding: 0 16px; }
 
 #workspaces {
@@ -60,19 +59,33 @@ window#waybar {
   transition: background-color 120ms ease, color 120ms ease;
 }
 
+/* Hover effect for quick recognition */
 #workspaces button:hover {
   background: @hover;
 }
 
+/* Focused (active) workspace */
 #workspaces button.focused {
-  color: #f59f00;
+  color: @warn;
   background: rgba(255,255,255,0.08);
+  font-weight: bold;
 }
 
+/* Urgent workspace */
 #workspaces button.urgent {
   color: @crit;
+  font-weight: bold;
 }
 
+/* Workspace visible on another output (monitor) */
 #workspaces button.visible {
-  color: rgba(230,233,239,0.8);
+  color: #a5d8ff;
+  background: rgba(245,159,0,0.10);
+  font-weight: bold;
+}
+
+/* Empty workspace (default) */
+#workspaces button.empty {
+  color: #666b74;
+  opacity: 0.6;
 }

@@ -16,6 +16,10 @@ systemctl --user start pipewire pipewire-pulse wireplumber
 # Apply dotfiles
 bash apply-dotfiles.sh
 
+mkdir -p ~/bin
+cp ./scripts/hypr-monitor-hotplug.sh ~/bin/hypr-monitor-hotplug.sh
+chmod +x ~/bin/hypr-monitor-hotplug.sh
+
 # Enable sddm and restart, donezies!
 sudo systemctl enable sddm
 reboot

@@ -12,7 +12,7 @@
   "modules-right": ["tray", "network", "pulseaudio", "battery"],
 
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": "{id}",
     "format-icons": {
       "default": "●",
       "focused": "",
@@ -26,11 +26,8 @@
     "all-outputs": false,
     "active-only": false,
     "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
+      "DP-1": [1,2,3,4,5],
+      "HDMI-A-1": [1,2,3,4,5]
     },
     "tooltip": false
   },
